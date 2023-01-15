@@ -1,0 +1,125 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    height: 100%;
+    background: linear-gradient(rgb(41, 2, 63),rgb(71, 3, 110));
+    
+}
+header{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    position: fixed;
+    z-index: 2;
+    width: 95%;
+}
+.logo{
+    cursor: pointer;
+}
+header ul{
+    display: flex;
+    margin-top: 10px;
+
+}
+header ul li{
+    list-style-type:none;
+    margin-right: 31px;
+    
+}
+header ul li a{
+    text-decoration: none;
+    
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+header ul li a:hover{
+    background: aliceblue;
+    color: rgb(71, 3, 110);
+}
+header ul li:first-child a{
+    background: aliceblue;
+    color: rgb(71, 3, 110);
+}
+.main{
+    height: 110vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(20px);
+}
+#bmoon{
+    transform: translateY(-190px);
+    font-size: 40px;
+}
+.content{
+    position: relative;
+    margin: 0px 40px;
+    padding: 30px;
+    background: transparent;
+}
+.content h3{
+    font-size: 40px;
+
+}
+.main::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background: linear-gradient(to top, rgb(56, 7, 85),transparent);
+}
+#back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    bottom: 50px;
+    right:50px;
+    font-size: 30px;
+    background: gold;
+    color: black;
+    font-weight: 900;
+    border-radius: 20px;
+    cursor: pointer;
+    display: none;
+}
+#h1{
+    transform: translateX(-600px);
+}
+#h2{
+    transform: translateX(-600px);
+}
+#h3{
+    transform: translateX(-600px);
+}
+#h4{
+    transform: translateX(-600px);
+}
+#h5{
+    transform: translateX(-600px);
+}
+.hs{
+    transform: translateX(-1300px);
+}
